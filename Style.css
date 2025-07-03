@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* text properties 
+Marging
+Padding*/
 *{
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 #head{
     background-color: purple;
@@ -32,9 +38,61 @@
     margin: 100px 200px 50px 150px;  
     text-decoration: line-through;  
 }
-/* text properties */
+
 a{
     text-decoration: none;
     text-align: center;
       text-shadow: 2px 1px black;
+}
+/* box properties */
+.box{
+    /* background-color: red; */
+    height: 250px;
+    width: 300px;
+    /* border: 3px solid purple; */
+    border-radius: 10px;
+    box-shadow: 2px 3px 1px 1.2px green,inset 3px 5px pink;
+    background: linear-gradient(rgba(31, 31, 62, 0.4),rgba(123, 55, 55, 0.256),rgba(0, 128, 0, 0)),url(./download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: right;
+    opacity: .8;
+    cursor: pointer;
+    transition: 3s ease;
+    /* float: right; */
+    /* transform: translateX(100px); */
+    
+}
+
+.box:hover{
+    transform: scale(1.2);
+    /* transform: rotate(45deg); */
+    transition: 3s ease;
+}
+
+/* position */
+/* fixed
+static
+sticky
+relative
+absolute */
+.head{
+    /* position: fixed; */
+}
+summa{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.box{
+    position: relative;
+}
+.box1{
+    background-color: goldenrod;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
 }
